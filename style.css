@@ -1,0 +1,60 @@
+* {
+    padding: 0rem;
+    margin: 0rem;
+
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:royalblue;
+    font-family: Arial, sans-serif;
+    height: 100vh;
+}
+.container{
+    width: 30rem;
+    border: 0.3rem solid lightblue;
+    border-radius: 0.3rem;
+    background-color: aliceblue;
+}
+.tab-changer{
+    display: flex;
+    padding: 1rem;
+    height: 3.5rem;
+    
+}
+input[type="text"]{
+    border: none;
+    outline: none;
+    background-color: aliceblue;
+    border-bottom:0.3rem solid gray;
+    margin-right: 0.5rem;
+    padding-right: 6rem;
+    font-size: large;
+}
+button{
+    padding: 1rem;
+    margin-left: 1rem;
+    border: none;
+    outline: none;
+    font-size: 1.1rem;
+    background-color:darkgray;
+    text-align: center;
+    cursor: pointer;
+}
+input[type="radio"]{
+    display: none;
+}
+label{
+    font-size: large;
+    padding: 0.3rem;
+    color: gray;
+    cursor: pointer;
+}
+input[type="radio"]:checked + label{
+    color: black;
+}
+p{
+    padding: 0.7rem;
+    font-size: large;
+}
