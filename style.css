@@ -1,60 +1,70 @@
 * {
-    padding: 0rem;
-    margin: 0rem;
-
+    padding: 0;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    font-size: medium;
+    box-sizing: border-box;
 }
 body{
     display: flex;
     justify-content: center;
     align-items: center;
     background-color:royalblue;
-    font-family: Arial, sans-serif;
     height: 100vh;
 }
 .container{
-    width: 30rem;
+    padding: 2rem;
     border: 0.3rem solid lightblue;
     border-radius: 0.3rem;
     background-color: aliceblue;
-}
-.tab-changer{
-    display: flex;
-    padding: 1rem;
-    height: 3.5rem;
-    
 }
 input[type="text"]{
     border: none;
     outline: none;
     background-color: aliceblue;
     border-bottom:0.3rem solid gray;
-    margin-right: 0.5rem;
-    padding-right: 6rem;
-    font-size: large;
+    margin-right: 1.5rem;
+    padding:0 6rem 1rem 0 ;
+}
+input[type="text"]:focus {
+    border-bottom-color: black;
 }
 button{
     padding: 1rem;
-    margin-left: 1rem;
     border: none;
+    border-radius: 0.3rem;
     outline: none;
-    font-size: 1.1rem;
-    background-color:darkgray;
-    text-align: center;
+    background-color:rgba(211, 211, 211, 0.801);
     cursor: pointer;
+    font-weight: bold;
+}
+button:hover{
+    background-color: lightgray;
+}
+button:active {
+    transform: translateY(0.2rem);
 }
 input[type="radio"]{
     display: none;
 }
+.tab-name{
+    margin: 1REM 0;
+}
 label{
-    font-size: large;
-    padding: 0.3rem;
     color: gray;
     cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+label:nth-of-type(2){
+    padding: 0 1rem;
 }
 input[type="radio"]:checked + label{
     color: black;
 }
-p{
-    padding: 0.7rem;
-    font-size: large;
+@media screen and (max-width:570px) {
+    input[type="text"]{
+        padding-right: 0rem;
+        margin-right: 0.75rem;
+    }  
 }
